@@ -49,21 +49,21 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta content="" name="description" />
     <meta content="" name="author" />
-    <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/boostrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/bootstrap-tag/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/dropzone/css/dropzone.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="assets/plugins/summernote/css/summernote.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
-    <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+    <link href="css/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/select2.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" />
+    <link href="css/dropzone.css" rel="stylesheet" type="text/css" />
+    <link href="css/datepicker3.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/summernote.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/daterangepicker-bs3.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/pages-icons.css" rel="stylesheet" type="text/css">
+    <link class="main-stylesheet" href="css/pages.css" rel="stylesheet" type="text/css" />
     <!--[if lte IE 9]>
         <link href="pages/css/ie9.css" rel="stylesheet" type="text/css" />
     <![endif]-->
@@ -71,7 +71,7 @@
     window.onload = function() {
         // fix for windows 8
         if (navigator.appVersion.indexOf("Windows NT 6.2") != -1)
-            document.head.innerHTML += '<link rel="stylesheet" type="text/css" href="pages/css/windows.chrome.fix.css" />'
+            document.head.innerHTML += '<link rel="stylesheet" type="text/css" href="css/windows.chrome.fix.css" />'
     }
     </script>
 </head>
@@ -81,27 +81,27 @@
         <div class="sidebar-overlay-slide from-top" id="appMenu">
             <div class="row">
                 <div class="col-xs-6 no-padding">
-                    <a href="#" class="p-l-40"><img src="assets/img/demo/social_app.svg" alt="socail">
+                    <a href="#" class="p-l-40"><img src="images/social_app.svg" alt="socail">
                     </a>
                 </div>
                 <div class="col-xs-6 no-padding">
-                    <a href="#" class="p-l-10"><img src="assets/img/demo/email_app.svg" alt="socail">
+                    <a href="#" class="p-l-10"><img src="images/email_app.svg" alt="socail">
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-6 m-t-20 no-padding">
-                    <a href="#" class="p-l-40"><img src="assets/img/demo/calendar_app.svg" alt="socail">
+                    <a href="#" class="p-l-40"><img src="images/calendar_app.svg" alt="socail">
                     </a>
                 </div>
                 <div class="col-xs-6 m-t-20 no-padding">
-                    <a href="#" class="p-l-10"><img src="assets/img/demo/add_more.svg" alt="socail">
+                    <a href="#" class="p-l-10"><img src="images/add_more.svg" alt="socail">
                     </a>
                 </div>
             </div>
         </div>
         <div class="sidebar-header">
-            <img src="assets/img/logo_white.png" alt="logo" class="brand" data-src="assets/img/logo_white.png" data-src-retina="assets/img/logo_white_2x.png" width="78" height="22">
+            <img src="images/logo_white.png" alt="logo" class="brand" data-src="images/logo_white.png" data-src-retina="images/logo_white_2x.png" width="78" height="22">
             <div class="sidebar-header-controls">
                 <button type="button" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20" data-pages-toggle="#appMenu"><i class="fa fa-angle-down fs-16"></i>
                 </button>
@@ -344,7 +344,7 @@
             <div class=" pull-left sm-table">
                 <div class="header-inner">
                     <div class="brand inline">
-                        <img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
+                        <img src="images/logo.png" alt="logo" data-src="images/logo.png" data-src-retina="images/logo_2x.png" width="78" height="22">
                     </div>
                     <ul class="notification-list no-margin hidden-sm hidden-xs b-grey b-l b-r no-style p-l-30 p-r-20">
                         <li class="p-r-15 inline">
@@ -414,7 +414,7 @@ A leader and a follower.”</h5>
                                             <div class="notification-item unread clearfix">
                                                 <div class="heading">
                                                     <div class="thumbnail-wrapper d24 circular b-white m-r-5 b-a b-white m-t-10 m-r-10">
-                                                        <img width="30" height="30" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" alt="" src="assets/img/profiles/1.jpg">
+                                                        <img width="30" height="30" data-src-retina="images/1x.jpg" data-src="images/1.jpg" alt="" src="images/1.jpg">
                                                     </div>
                                                     <a href="#" class="text-complete">
                                                         <span class="bold">Revox Design Labs</span>
@@ -459,7 +459,7 @@ A leader and a follower.”</h5>
                     <div class="dropdown pull-right">
                         <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="thumbnail-wrapper d32 circular inline m-t-5">
-<img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
+<img src="images/avatar.jpg" alt="" data-src="images/avatar.jpg" data-src-retina="images/avatar_small2x.jpg" width="32" height="32">
 </span>
                         </button>
                         <ul class="dropdown-menu profile-dropdown" role="menu">
@@ -496,7 +496,7 @@ A leader and a follower.”</h5>
                                 <div class="col-lg-7 col-md-6 ">
                                     <div class="panel panel-default">
                                         <div class="panel-body text-center">
-                                            <img class="image-responsive-height demo-mw-600" src="assets/img/demo/form_hero.gif" alt="">
+                                            <img class="image-responsive-height demo-mw-600" src="images/form_hero.gif" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -511,7 +511,7 @@ A leader and a follower.”</h5>
                                             <br>
                                             <div>
                                                 <div class="profile-img-wrapper m-t-5 inline">
-                                                    <img width="35" height="35" src="assets/img/profiles/avatar_small.jpg" alt="" data-src="assets/img/profiles/avatar_small.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg">
+                                                    <img width="35" height="35" src="images/avatar_small.jpg" alt="" data-src="images/avatar_small.jpg" data-src-retina="images/avatar_small2x.jpg">
                                                     <div class="chat-status available">
                                                     </div>
                                                 </div>
@@ -1488,7 +1488,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/1x.jpg" data-src="images/1.jpg" src="images/1x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1506,7 +1506,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/2x.jpg" data-src="images/2.jpg" src="images/2x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1519,7 +1519,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/3x.jpg" data-src="images/3.jpg" src="images/3x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1537,7 +1537,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/4x.jpg" data-src="images/4.jpg" src="images/4x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1550,7 +1550,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/5x.jpg" data-src="images/5.jpg" src="images/5x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1568,7 +1568,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/6x.jpg" data-src="images/6.jpg" src="images/6x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1581,7 +1581,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/7x.jpg" data-src="images/7.jpg" src="images/7x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1599,7 +1599,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/8x.jpg" data-src="images/8.jpg" src="images/8x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1612,7 +1612,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/9x.jpg" data-src="images/9.jpg" src="images/9x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1625,7 +1625,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/1x.jpg" data-src="images/1.jpg" src="images/1x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1638,7 +1638,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/2x.jpg" data-src="images/2.jpg" src="images/2x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1651,7 +1651,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/3x.jpg" data-src="images/3.jpg" src="images/3x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1669,7 +1669,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/4x.jpg" data-src="images/4.jpg" src="images/4x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1687,7 +1687,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/5x.jpg" data-src="images/5.jpg" src="images/5x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1700,7 +1700,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/6x.jpg" data-src="images/6.jpg" src="images/6x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1718,7 +1718,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/7x.jpg" data-src="images/7.jpg" src="images/7x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1736,7 +1736,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/8x.jpg" data-src="images/8.jpg" src="images/8x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1754,7 +1754,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/9x.jpg" data-src="images/9.jpg" src="images/9x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1767,7 +1767,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/1x.jpg" data-src="images/1.jpg" src="images/1x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1780,7 +1780,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/2x.jpg" data-src="images/2.jpg" src="images/2x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1793,7 +1793,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/3x.jpg" data-src="images/3.jpg" src="images/3x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1811,7 +1811,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/4x.jpg" data-src="images/4.jpg" src="images/4x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1824,7 +1824,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/5x.jpg" data-src="images/5.jpg" src="images/5x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1837,7 +1837,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/6x.jpg" data-src="images/6.jpg" src="images/6x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1850,7 +1850,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/7x.jpg" data-src="images/7.jpg" src="images/7x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1863,7 +1863,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/8x.jpg" data-src="images/8.jpg" src="images/8x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1876,7 +1876,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/9x.jpg" data-src="images/9.jpg" src="images/9x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1894,7 +1894,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/1x.jpg" data-src="images/1.jpg" src="images/1x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1912,7 +1912,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/2x.jpg" data-src="images/2.jpg" src="images/2x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1930,7 +1930,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/3x.jpg" data-src="images/3.jpg" src="images/3x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1943,7 +1943,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/4x.jpg" data-src="images/4.jpg" src="images/4x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1956,7 +1956,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/5x.jpg" data-src="images/5.jpg" src="images/5x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1974,7 +1974,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/6x.jpg" data-src="images/6.jpg" src="images/6x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -1987,7 +1987,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/7x.jpg" data-src="images/7.jpg" src="images/7x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -2000,7 +2000,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/8x.jpg" data-src="images/8.jpg" src="images/8x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -2018,7 +2018,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/9x.jpg" data-src="images/9.jpg" src="images/9x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -2031,7 +2031,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/1x.jpg" data-src="images/1.jpg" src="images/1x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -2044,7 +2044,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/2x.jpg" data-src="images/2.jpg" src="images/2x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -2057,7 +2057,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/3x.jpg" data-src="images/3.jpg" src="images/3x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -2075,7 +2075,7 @@ Input masks
                                         <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
                                             <span class="col-xs-height col-middle">
 <span class="thumbnail-wrapper d32 circular bg-success">
-<img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
+<img width="34" height="34" alt="" data-src-retina="images/4x.jpg" data-src="images/4.jpg" src="images/4x.jpg" class="col-top">
 </span>
                                             </span>
                                             <p class="p-l-10 col-xs-height col-middle col-xs-12">
@@ -2111,7 +2111,7 @@ Input masks
                             </div>
                             <div class="message clearfix">
                                 <div class="profile-img-wrapper m-t-5 inline">
-                                    <img class="col-top" width="30" height="30" src="assets/img/profiles/avatar_small.jpg" alt="" data-src="assets/img/profiles/avatar_small.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg">
+                                    <img class="col-top" width="30" height="30" src="images/avatar_small.jpg" alt="" data-src="images/avatar_small.jpg" data-src-retina="images/avatar_small2x.jpg">
                                 </div>
                                 <div class="chat-bubble from-them">
                                     Hey
@@ -2129,7 +2129,7 @@ Input masks
                             </div>
                             <div class="message clearfix">
                                 <div class="profile-img-wrapper m-t-5 inline">
-                                    <img class="col-top" width="30" height="30" src="assets/img/profiles/avatar_small.jpg" alt="" data-src="assets/img/profiles/avatar_small.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg">
+                                    <img class="col-top" width="30" height="30" src="images/avatar_small.jpg" alt="" data-src="images/avatar_small.jpg" data-src-retina="images/avatar_small2x.jpg">
                                 </div>
                                 <div class="chat-bubble from-them">
                                     Yea
@@ -2157,7 +2157,7 @@ Input masks
     <div class="overlay hide" data-pages="search">
         <div class="overlay-content has-results m-t-20">
             <div class="container-fluid">
-                <img class="overlay-brand" src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
+                <img class="overlay-brand" src="images/logo.png" alt="logo" data-src="images/logo.png" data-src-retina="images/logo_2x.png" width="78" height="22">
                 <a href="#" class="close-icon-light overlay-close text-black fs-16">
                     <i class="pg-close"></i>
                 </a>
@@ -2188,7 +2188,7 @@ Input masks
                             <div class="">
                                 <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
                                     <div>
-                                        <img width="50" height="50" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
+                                        <img width="50" height="50" src="images/avatar.jpg" data-src="images/avatar.jpg" data-src-retina="images/avatar2x.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="p-l-10 inline p-t-5">
@@ -2253,35 +2253,35 @@ Input masks
             </div>
         </div>
     </div>
-    <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/boostrapv3/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-bez/jquery.bez.min.js"></script>
-    <script src="assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-actual/jquery.actual.min.js"></script>
-    <script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap-select2/select2.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
-    <script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-autonumeric/autoNumeric.js"></script>
-    <script type="text/javascript" src="assets/plugins/dropzone/dropzone.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-inputmask/jquery.inputmask.min.js"></script>
-    <script src="assets/plugins/boostrap-form-wizard/js/jquery.bootstrap.wizard.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
-    <script src="assets/plugins/summernote/js/summernote.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/moment/moment.min.js"></script>
-    <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <script src="assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
-    <script src="pages/js/pages.min.js"></script>
-    <script src="assets/js/form_elements.js" type="text/javascript"></script>
-    <script src="assets/js/scripts.js" type="text/javascript"></script>
+    <script src="js/pace.min.js" type="text/javascript"></script>
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/modernizr.custom.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery-easy.js" type="text/javascript"></script>
+    <script src="js/jquery.unveil.min.js" type="text/javascript"></script>
+    <script src="js/jquery.bez.min.js"></script>
+    <script src="js/jquery.ioslist.min.js" type="text/javascript"></script>
+    <script src="js/jquery.actual.min.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
+    <script type="text/javascript" src="js/classie.js"></script>
+    <script src="js/switchery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap3-wysihtml5.all.min.js"></script>
+    <script type="text/javascript" src="js/autoNumeric.js"></script>
+    <script type="text/javascript" src="js/dropzone.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-tagsinput.min.js"></script>
+    <script type="text/javascript" src="js/jquery.inputmask.min.js"></script>
+    <script src="js/jquery.bootstrap.wizard.min.js" type="text/javascript"></script>
+    <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="js/summernote.min.js" type="text/javascript"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script src="js/bootstrap-timepicker.min.js"></script>
+    <script src="js/pages.min.js"></script>
+    <script src="js/form_elements.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
 </body>
 
 </html>
