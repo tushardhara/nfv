@@ -6,7 +6,12 @@ app.config(function($routeProvider) {
         .when('/', {
             templateUrl : '/assets/app/partial/user.html',
             controller  : 'userCtrl'
-        });
+        })
+        .when('/chassis', {
+            templateUrl : '/assets/app/partial/chassis.html',
+            controller  : 'chassisCtrl'
+        })
+        ;
 });
 
 

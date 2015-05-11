@@ -74,4 +74,8 @@ app.controller('userCtrl', ['$scope','httpq', function($scope,httpq){
 		    console.log("finally finished gists");
 		  });
     }
+    $scope.cancel = function(){
+    	$('#editNewAppModal').modal('hide');
+    	$('#addNewAppModal').modal('hide');
+    }
 }]);

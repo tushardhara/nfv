@@ -5,7 +5,7 @@
                 <div class="inner">
                     <ul class="breadcrumb">
                         <li>
-                            <a href="#" class="active">Users</a>
+                            <a href="#/chassis" class="active">Chassis</a>
                         </li>
                     </ul>
                 </div>
@@ -19,7 +19,7 @@
                     </div>
                     <div class="pull-right">
                         <div class="col-xs-12">
-                            <button id="show-modal" class="btn btn-primary btn-cons"><i class="fa fa-plus"></i> Add User</button>
+                            <button id="show-modal" class="btn btn-primary btn-cons"><i class="fa fa-plus"></i> Add Chassis</button>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -28,30 +28,38 @@
                     <table class="table table-hover ">
                         <thead>
                             <tr>
-                                <th>ID</th>
-                                <th>EMAIL ID</th>
+                                <th>CHASSIS ID</th>
                                 <th>USERNAME</th>
-                                <th>LINUX ID</th>
-                                <th>CHASSIS DETAIL</th>
+                                <th>VDC ID</th>
+                                <th>IP ADDRESS</th>
+                                <th>GATEWAY ADDRESS</th>
+                                <th>SUBNET</th>
+                                <th>NETWORK</th>
                                 <th>ACTION</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="x in form_elements | filter:searchText">
+                            <tr ng-repeat="x in chassis_list | filter:searchText">
                                 <td class="v-align-middle">
-                                    <p>{{x.enum_id}}</p>
-                                </td>
-                                <td class="v-align-middle">
-                                    <p>{{x.email_id}}</p>
+                                    <p>{{x.chassisid}}</p>
                                 </td>
                                 <td class="v-align-middle">
                                     <p>{{x.user_name}}</p>
                                 </td>
                                 <td class="v-align-middle">
-                                    <p>{{x.linux_id}}</p>
+                                    <p>{{x.vdcid}}</p>
                                 </td>
                                 <td class="v-align-middle">
-                                    <p>{{x.chassis_detail}}</p>
+                                    <p>{{x.ipaddr}}</p>
+                                </td>
+                                <td class="v-align-middle">
+                                    <p>{{x.gwaddr}}</p>
+                                </td>
+                                <td class="v-align-middle">
+                                    <p>{{x.mask}}</p>
+                                </td>
+                                <td class="v-align-middle">
+                                    <p>{{x.network}}</p>
                                 </td>
                                 <td class="v-align-middle">
                                     <button class="btn btn-info btn-cons m-b-10" type="button" ng-click="edit(x)"><i class="fa fa-paste"></i> <span class="bold">Edit</span></button>
@@ -81,40 +89,54 @@
             <div class="modal-header clearfix ">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
                 </button>
-                <h4 class="p-b-5"><span class="semi-bold">New</span> User</h4>
+                <h4 class="p-b-5"><span class="semi-bold">New</span> Chassis</h4>
             </div>
             <div class="modal-body">
-                <p class="small-text">And a new user using this form, make sure you fill them all</p>
+                <p class="small-text">And a new Chassis using this form, make sure you fill them all</p>
                 <form role="form">
                     <div class="row">
                         <div class="col-sm-12">
-                            <div class="form-group form-group-default">
-                                <label>Email</label>
-                                <input type="text" class="form-control" ng-model="newuser['email_id']" placeholder="Enter Email">
+                            <div class="form-group form-group-default form-group-default-select2 required">
+                                <label class="">Tenent</label>
+                                <select id="select-user"class="full-width" data-placeholder="Select Country" data-init-plugin="select2" ng-model="newchassis['tenentid']">
+                                    <option value="{{x.enum_id}}" ng-repeat="x in user_list">{{x.user_name}}</option>
+                                </select>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group form-group-default">
-                                <label>Username</label>
-                                <input type="text" class="form-control" ng-model="newuser['user_name']" placeholder="Enter Username">
+                                <label>VDC ID</label>
+                                <input type="text" class="form-control" ng-model="newchassis['vdcid']" placeholder="Enter VDC ID">
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-sm-6">
                             <div class="form-group form-group-default">
-                                <label>Linux ID</label>
-                                <input type="text" class="form-control" ng-model="newuser['linux_id']" placeholder="Enter Linux ID">
+                                <label>IP Address</label>
+                                <input type="text" class="form-control" ng-model="newchassis['ipaddr']" placeholder="Enter IP Address">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group form-group-default">
+                                <label>Gateway Address</label>
+                                <input type="text" class="form-control" ng-model="newchassis['gwaddr']" placeholder="Enter Gateway Address">
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-sm-6">
                             <div class="form-group form-group-default">
-                                <label>Chassis Detail</label>
-                                <input type="text" class="form-control" ng-model="newuser['chassis_detail']" placeholder="Enter Chassis Detail">
+                                <label>Subnet</label>
+                                <input type="text" class="form-control" ng-model="newchassis['mask']" placeholder="Enter Subnet">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group form-group-default">
+                                <label>Network</label>
+                                <input type="text" class="form-control" ng-model="newchassis['network']" placeholder="Enter Network">
                             </div>
                         </div>
                     </div>
