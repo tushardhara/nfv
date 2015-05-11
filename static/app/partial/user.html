@@ -1,0 +1,181 @@
+<div class="page-content-wrapper">
+    <div class="content">
+        <div class="jumbotron" data-pages="parallax">
+            <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
+                <div class="inner">
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="#" class="active">Users</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid container-fixed-lg">
+            <div class="panel panel-transparent">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <input type="text" id="search-table" class="form-control pull-right" placeholder="Search">
+                    </div>
+                    <div class="pull-right">
+                        <div class="col-xs-12">
+                            <button id="show-modal" class="btn btn-primary btn-cons"><i class="fa fa-plus"></i> Add User</button>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-hover ">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>EMAIL ID</th>
+                                <th>USERNAME</th>
+                                <th>LINUX ID</th>
+                                <th>CHASSIS DETAIL</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="x in form_elements">
+                                <td class="v-align-middle">
+                                    <p>{{x.enum_id}}</p>
+                                </td>
+                                <td class="v-align-middle">
+                                    <p>{{x.email_id}}</p>
+                                </td>
+                                <td class="v-align-middle">
+                                    <p>{{x.user_name}}</p>
+                                </td>
+                                <td class="v-align-middle">
+                                    <p>{{x.linux_id}}</p>
+                                </td>
+                                <td class="v-align-middle">
+                                    <p>{{x.chassis_detail}}</p>
+                                </td>
+                                <td class="v-align-middle">
+                                    <button class="btn btn-info btn-cons m-b-10" type="button" ng-click="edit(x)"><i class="fa fa-paste"></i> <span class="bold">Edit</span></button>
+                                    <button class="btn btn-danger btn-cons m-b-10" type="button" ng-click="delete(x)"><i class="fa fa-trash-o"></i><span class="bold">Delete</span></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid container-fixed-lg footer">
+        <div class="copyright sm-text-center">
+            <p class="small no-margin pull-left sm-pull-reset">
+                <span class="hint-text">Copyright © 2015 </span>
+                <span class="font-montserrat">Wipro</span>.
+                <span class="hint-text">All rights reserved. </span>
+            </p>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<div class="modal fade stick-up" id="addNewAppModal" tabindex="-1" role="dialog" aria-labelledby="addNewAppModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix ">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                </button>
+                <h4 class="p-b-5"><span class="semi-bold">New</span> User</h4>
+            </div>
+            <div class="modal-body">
+                <p class="small-text">And a new user using this form, make sure you fill them all</p>
+                <form role="form">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-default">
+                                <label>Email</label>
+                                <input type="text" class="form-control" ng-model="newuser['email_id']" placeholder="Enter Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-default">
+                                <label>Username</label>
+                                <input type="text" class="form-control" ng-model="newuser['user_name']" placeholder="Enter Username">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-default">
+                                <label>Linux ID</label>
+                                <input type="text" class="form-control" ng-model="newuser['linux_id']" placeholder="Enter Linux ID">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-default">
+                                <label>Chassis Detail</label>
+                                <input type="text" class="form-control" ng-model="newuser['chassis_detail']" placeholder="Enter Chassis Detail">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="add-app" type="button" class="btn btn-primary  btn-cons" ng-click="submit()">Add</button>
+                <button type="button" class="btn btn-cons">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade stick-up" id="editNewAppModal" tabindex="-1" role="dialog" aria-labelledby="editNewAppModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header clearfix ">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                </button>
+                <h4 class="p-b-5"><span class="semi-bold">Edit</span> User</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-default">
+                                <label>Email</label>
+                                <input type="text" class="form-control" ng-model="edituser['email_id']" placeholder="Enter Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-default">
+                                <label>Username</label>
+                                <input type="text" class="form-control" ng-model="edituser['user_name']" placeholder="Enter Username">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-default">
+                                <label>Linux ID</label>
+                                <input type="text" class="form-control" ng-model="edituser['linux_id']" placeholder="Enter Linux ID">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group form-group-default">
+                                <label>Chassis Detail</label>
+                                <input type="text" class="form-control" ng-model="edituser['chassis_detail']" placeholder="Enter Chassis Detail">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="add-app" type="button" class="btn btn-primary  btn-cons" ng-click="esubmit()">Edit</button>
+                <button type="button" class="btn btn-cons" ng-click="cancel()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
